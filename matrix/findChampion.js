@@ -3,7 +3,6 @@ var findChampion = function(n, edges) {
 
     const weaker = new Set();
     const stronger = new Set();
-    
     for(let i = 0; i < edges.length; i++) {
         const [a, b] = edges[i];
         if(!weaker.has(a)) stronger.add(a);
